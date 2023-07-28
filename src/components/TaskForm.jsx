@@ -4,7 +4,7 @@ import { StyledSubmitButton } from "./styled/Button.styled";
 import { StyledTaskFormContainer } from "./styled/TaskFormContainer.styled";
 
 export default function TaskForm() {
-  const { handleChangeInput, handleSubmitTask } = useContext(SiteContext);
+  const { handleChangeInput, handleSubmitTask, task } = useContext(SiteContext);
 
   return (
     <>
@@ -16,6 +16,8 @@ export default function TaskForm() {
               type="text"
               id="taskInput"
               name="text"
+              value={task.text}
+
             />
             <StyledSubmitButton className="mb-1">Submit</StyledSubmitButton>
           </div>
@@ -25,6 +27,7 @@ export default function TaskForm() {
               type="checkbox"
               id="checkInput"
               name="priority"
+              checked = {task.priority}
             />
             <label htmlFor="checkInput">important</label>
           </div>
