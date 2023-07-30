@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { SiteContext } from "../context/SiteContext";
+import { SiteContext } from "../context/SiteContext.jsx";
 import { StyledSubmitButton } from "./styled/Button.styled";
 import { StyledTaskFormContainer } from "./styled/TaskFormContainer.styled";
 
@@ -27,7 +27,7 @@ export default function TaskForm() {
               type="checkbox"
               id="checkInput"
               name="priority"
-              checked = {task.priority}
+              checked={task.priority}
             />
             <label htmlFor="checkInput">important</label>
           </div>

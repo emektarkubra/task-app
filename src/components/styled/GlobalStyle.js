@@ -7,23 +7,22 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    background-color: white;
+    background-color:  ${({ theme }) => theme.colors.bgColor};
     color: black;
     margin: 0;
     padding: 0; 
-
   }
 
   .clear-fix {
     clear: both;
   }
  
-    .mb-1 {
-        margin-bottom : 0.8vw;
-    }
+  .mb-1 {
+    margin-bottom : 0.8vw;
+  }
 
-    .text-align {
-        text-align : center;
-    }
+  .text-align {
+    text-align : center;
+  }
 
 `;

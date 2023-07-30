@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
 export const StyledTaskList = styled.div`
-  background-color: rgb(255, 255, 255);
+  background-color: ${({ theme }) => theme.colors.bgColor};
   border-radius: 0.5vw;
 `;

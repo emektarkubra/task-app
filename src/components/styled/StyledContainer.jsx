@@ -1,9 +1,9 @@
 import { styled } from "styled-components";
 
 export const StyledContainer = styled.div`
-    width : 60%;
-    border : 1px solid black;
-    margin: 1vw auto; 
-    padding: 0 2vw 2vw 2vw;
-
-`
+  background-color: ${({ theme }) => theme.colors.bgColor};
+  width: 60%;
+  border-radius: 0.8vw;
+  margin: 1vw auto;
+  padding: 0 2vw 2vw 2vw;
+`;
