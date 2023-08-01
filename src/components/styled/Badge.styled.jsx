@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const StyledBadge = styled.span`
   background-color: ${({ theme }) => theme.colors.blue};
-  color: ${({ theme }) => theme.colors.bgColor};
+  color: ${({ theme }) => theme.colors.white};
   border-radius: 0.5vw;
   font-size: 1vw;
   padding-bottom: 0.32vw;
