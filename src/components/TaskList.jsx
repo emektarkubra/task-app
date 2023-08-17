@@ -16,7 +16,9 @@ export default function TaskList() {
     visibility,
   } = useContext(SiteContext);
 
-  return JSON.parse(localStorage.getItem("taskList")).length === 0 ? null : (
+  const storedTaskList = JSON.parse(localStorage.getItem("taskList"));
+
+  return storedTaskList && storedTaskList.length !== 0 ? (
     <>
       <StyledTaskList>
         {visibility ? (
@@ -40,5 +42,5 @@ export default function TaskList() {
         </StyledDeleteAllTasksButton>
       </StyledTaskList>
     </>
-  );
+  ) : null;
 }
