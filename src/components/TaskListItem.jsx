@@ -16,14 +16,20 @@ export default function TaskListItem({ item }) {
 
   return (
     <>
-      <StyledTaskListItem>
+      <StyledTaskListItem $isDone={item.isDone}>
         <div>
           {item.priority ? <Badge /> : null}
           {item.text}
         </div>
         <div className="button-group">
-          <StyledDoneButton onClick={() => handleDoneTask(item)}>
-            {item.isDone ? <ImCheckboxChecked /> : <ImCheckboxUnchecked />}{" "}
+          <StyledDoneButton
+            className="doneButton"
+            onClick={() => handleDoneTask(item)}>
+            {item.isDone ? (
+              <ImCheckboxChecked className="check-box" />
+            ) : (
+              <ImCheckboxUnchecked />
+            )}
           </StyledDoneButton>
           <StyledEditButton onClick={() => handleEditTask(item)}>
             <FaRegEdit />

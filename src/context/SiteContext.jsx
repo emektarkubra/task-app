@@ -93,10 +93,16 @@ function SiteContextProvider({ children }) {
     setTaskCount((prev) => prev + 1);
   }
 
-  //  done task  //!!!!!!!!!!
+  //  done task
   function handleDoneTask(item) {
-    item.isDone = !item.isDone;
-    console.log(item);
+    setTaskList(
+      taskList.map((taskItem) => {
+        if (taskItem.id === item.id) {
+          return { ...taskItem, isDone: !taskItem.isDone };
+        }
+        return taskItem;
+      })
+    );
   }
 
   return (
