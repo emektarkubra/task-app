@@ -23,7 +23,7 @@
 
 ## Demo
 
-[Live Demo](https://www.example.com) (Replace with your app's live demo link)
+[Live Demo](https://github.com/emektarkubra/task-app/assets/124355274/7dcd40f6-06b3-4a0a-b586-58d61ee67cef)
 
 ## Features
 
@@ -79,11 +79,6 @@ npm run build
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or create a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 
 ## Authors
 

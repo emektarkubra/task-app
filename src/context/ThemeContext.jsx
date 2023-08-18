@@ -5,7 +5,7 @@ import { createContext } from "react";
 const ThemeContext = createContext();
 
 function ThemeContextProvider({ children }) {
-  const [themeName, setThemeName] = useState("light");
+  const [themeName, setThemeName] = useState("dark");
 
   function handleTheme(e) {
     setThemeName((prev) => (prev === "light" ? "dark" : "light"));
